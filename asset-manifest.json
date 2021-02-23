@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/form-validtion/static/css/main.749a0ba6.chunk.css",
+    "main.js": "/form-validtion/static/js/main.e497db86.chunk.js",
+    "main.js.map": "/form-validtion/static/js/main.e497db86.chunk.js.map",
+    "runtime-main.js": "/form-validtion/static/js/runtime-main.9f680f31.js",
+    "runtime-main.js.map": "/form-validtion/static/js/runtime-main.9f680f31.js.map",
+    "static/js/2.db302aed.chunk.js": "/form-validtion/static/js/2.db302aed.chunk.js",
+    "static/js/2.db302aed.chunk.js.map": "/form-validtion/static/js/2.db302aed.chunk.js.map",
+    "static/js/3.0e13caa7.chunk.js": "/form-validtion/static/js/3.0e13caa7.chunk.js",
+    "static/js/3.0e13caa7.chunk.js.map": "/form-validtion/static/js/3.0e13caa7.chunk.js.map",
+    "index.html": "/form-validtion/index.html",
+    "static/css/main.749a0ba6.chunk.css.map": "/form-validtion/static/css/main.749a0ba6.chunk.css.map",
+    "static/js/2.db302aed.chunk.js.LICENSE.txt": "/form-validtion/static/js/2.db302aed.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/form-validtion/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f680f31.js",
+    "static/js/2.db302aed.chunk.js",
+    "static/css/main.749a0ba6.chunk.css",
+    "static/js/main.e497db86.chunk.js"
+  ]
+}
