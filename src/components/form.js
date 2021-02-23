@@ -80,20 +80,25 @@ class Form extends React.Component {
                         ? ''
                         : 'Characters With Special characters are allowed for this field ';
                 break;
-            case 'radio':
-                errors.radio = value ? '' : 'select from Radio ';
-
-               // this.setState({ ...this.state, radio: event.target.value || null })
-                break;
-
-
-
+           
             default:
                 break;
-        }
+        } 
 
         this.setState({ errors, [name]: value });
     }
+
+
+    handleChangeRadio=(event)=>{
+    console.log(event.target.value)
+    this.state.errors.radio =""
+    this.setState({...this.state, radio: event.target.value})
+    }
+    handleChangeDropdown=(event)=>{
+        console.log(event.target.value)
+        this.state.errors.select =""
+        this.setState({...this.state, select: event.target.value})
+        }
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -151,9 +156,9 @@ class Form extends React.Component {
                                 <span className='error'>{errors.characterWithSpecialCharacters}</span>}
                         </div>
                         <div >
-                            <input type="radio" value="value1" name="radio" onChange={this.handleChange} noValidate /> Value 1
-                            <input type="radio" value="value2" name="radio" onChange={e => this.setState({ ...this.state, radio: e.target.value || null })} noValidate /> Value 2
-                            <input type="radio" value="value3" name="radio" onChange={e => this.setState({ ...this.state, radio: e.target.value || null })} noValidate /> Value 3
+                            <input type="radio" value="value1" checked={this.state.radio==="value1"} name="radio" onChange={this.handleChangeRadio} noValidate /> Value 1
+                            <input type="radio" value="value2" checked={this.state.radio==="value2"} name="radio" onChange={this.handleChangeRadio} noValidate /> Value 2
+                            <input type="radio" value="value3" checked={this.state.radio==="value3"} name="radio" onChange={this.handleChangeRadio} noValidate /> Value 3
 
                          </div>
                         <div className='characterWithSpecialCharacters'>
@@ -162,7 +167,7 @@ class Form extends React.Component {
                         </div>
                         <select
                             required
-                            onChange={e => this.setState({ ...this.state, select: e.target.value || null })}
+                            onChange={this.handleChangeDropdown}
                             value={this.state.select || ''}
                         >
                             <option value=''>None</option>
